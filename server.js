@@ -65,6 +65,8 @@ app.use(cors());
 // [SH] Initialise Passport before using the route middleware
 app.use(passport.initialize());
 
+// allowing dist folder to be accesible in this domain
+app.use(express.static(__dirname + '/dist'));
 // [SH] Use the API routes when path starts with /api
 app.use('/', routesApi);
 
