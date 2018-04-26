@@ -5,6 +5,7 @@ var auth = jwt({
     secret: 'MY_SECRET',
     userProperty: 'payload'
 });
+var path = require('path');
 
 var ctrlProfile = require('../controllers/profile');
 var ctrlAuth = require('../controllers/authentication');
@@ -12,7 +13,9 @@ var otpService = require('../controllers/otpservice');
 
 // open Url
 router.get('/', (req, res) => {
-    res.send('SERVER IS WORKING');
+    // console.log(path.join(__dirname + '\\..\\dist\\index.html'));
+    res.sendFile(path.join(__dirname + '\\..\\dist\\index.html'));
+    // res.send('SERVER IS WORKING');
 });
 router.get('/test', (req, res) => {
     const testUser = req.query.email;
