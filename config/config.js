@@ -34,8 +34,8 @@ configs.apiAccesslogFile = 'api.access.log';
 // mailer configs
 configs.EMAIL_HOST = 'smtp.office365.com';
 configs.EMAIL_PORT = '587';
-configs.EMAIL_HOST_USER = 'shammi.hans@platform3solutions.com';
-configs.EMAIL_HOST_PASSWORD = 'Smi1p3s@';
+configs.EMAIL_HOST_USER = 'support@gmail.com';
+configs.EMAIL_HOST_PASSWORD = 'password';
 configs.EMAIL_USE_TLS = true;
 
 // First log printed in terminal, rest writes in terminal.log file
