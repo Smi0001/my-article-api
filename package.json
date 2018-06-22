@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "nodeman": "^1.1.2",
-    "nodemon": "^1.17.1"
+    "nodemon": "^1.17.5"
   }
 }
